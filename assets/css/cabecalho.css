@@ -1,0 +1,49 @@
+.cabecalho{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 96px;
+    padding-bottom: 107px;
+}
+
+.cabecalho h6{
+    color: var(--vermelho-escuro);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.cabecalho h2{
+    color: var(--preto2);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+}
+
+.cabecalho p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--cinza);
+}
+
+@media screen and (max-width: 425px) {
+    .cabecalho{
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    .cabecalho h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    .cabecalho p {
+        text-align: justify;
+    }
+}

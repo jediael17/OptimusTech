@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#7DaysOfCode - HTML e CSS</title>
+    <link rel="shortcut icon" type="imagex/png" href="./assets/img/icon/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/navBar.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/principal.css">
+    <link rel="stylesheet" href="./assets/css/vagas.css">
+    <link rel="stylesheet" href="./assets/css/depoimentos.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
+    <link rel="stylesheet" href="./assets/css/popUp.css">
+</head>
+<body>
+    <nav class="navBar">
+        <div class="navBar__logo">
+            <img src="./assets/img/logo.svg" alt="Logo">
+            <h1>OptimusTech</h1>
+        </div>
+        <!-- Menu Hamburguer -->        
+            <input type="checkbox" id="menu-btn" class="navegacao__btn">
+            <label for="menu-btn" class="navegacao__icon">
+                <span class="navegacao__barra"></span>
+            </label>
+            
+            <ul class="navBar__lista">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
+
+            <div class="navBar__login">
+                <a href="#">Entrar</a>
+                <button>Cadastrar</button>
+            </div>
+    </nav>
+    <header class="cabecalho">
+        <h6>Sobre nós</h6>
+        <h2>Por que somos diferentes?</h2>
+        <p>Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de <br> 
+            todo o mundo a se concentrarem naquilo que é realmente importante para elas.
+        </p>
+    </header>
+
+    <main class="container">
+        <section class="info">
+            <article>
+                <h3>400+</h3>
+                <h4>Projetos concluídos</h4>
+                <p>Nós ajudamos a construir mais de <br> 400 projetos incríveis.</p>
+            </article>
+            <article>
+                <h3>100+</h3>
+                <h4>Colaboradores</h4>
+                <p>Temos mais de 100 colaboradores <br> no nosso time que se preocupam com nossos clientes.</p>
+            </article>
+            <article>
+                <h3>20k</h3>
+                <h4>Downloads</h4>
+                <p>Nossos projetos que estão <br> disponíveis em lojas já foram <br> baixados mais de 20.000 vezes.</p>
+            </article>
+            <article>
+                <h3>500+</h3>
+                <h4>Reviews 5 estrelas</h4>
+                <p>Estamos orgulhosos de contar com <br>mais de 500 reviews 5 estrelas em <br>nossos produtos.</p>
+            </article>
+        </section>
+
+        <section class="vagas">
+            <div class="vagas__div">
+                <span>Vagas abertas!</span>
+            </div>
+            <h3>Estamos procurando por talentos</h3>
+            <p>Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
+            <img src="./assets/img/princiapal.svg" alt="Pessoas em reuniçao">
+            <section class="vagas__descricao">
+                <h4>Design</h4>
+                <article>
+                    <a href="#">
+                        <h5>Product Designer</h5>
+                        <p>Full-time
+                            <span>Faixa salarial: R$7.000</span>
+                        </p>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <h5>UX Designer</h5>
+                        <p>Full-time
+                            <span>Faixa salarial: R$6.000</span>
+                        </p>
+                    </a>
+                </article>
+            
+            
+                <h4>Desenvolvimento de Software</h4>
+                <article>
+                    <a href="#">
+                        <h5>Desenvolvedor(a) iOS</h5>
+                        <p>Full-time
+                            <span>Faixa salarial: R$8.000</span>
+                        </p>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <h5>Desenvolvedor(a) Front-end</h5>
+                        <p>Full-time
+                            <span>Faixa salarial: R$7.000</span>
+                        </p>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <h5>Desenvolvedor(a) Back-end</h5>
+                        <p>Full-time
+                            <span>Faixa salarial: R$8.000</span>
+                        </p>
+                    </a>
+                </article>
+            </section>
+        </section>
+
+        <section class="depoimentos">
+            <article class="depoimentos__cards">
+                <span>Veja o que nossos colaboradores falam sobre nós</span>
+                <h4>OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</h4>
+                <div class="depoimentos__perfil">
+                    <img src="./assets/img/Avatar.svg" alt="Foto perfil Júlia Castro">
+                    <p>Júlia Castro</p>
+                    <span>Desenvolvedora Web</span>
+                </div>
+            </article>            
+        </section>
+    </main>
+
+    <!-- caixa de dialogo -->
+    <div id="openmodal" class="modalDialog"> 
+        <div>
+            <a href="#close" class="close">X</a>
+            <picture class="modalDialog__logo">
+                <img src="./assets/img/logo.svg" alt="Logo">
+                <h1>OptimusTech</h1>
+            </picture>
+            <p><strong>Obrigado por se inscrever!</strong></p>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <h3>Acompanhe as nossas oportunidades</h3>
+        <p>Seja o primeiro a saber quando novas vagas serão abertas!</p>
+        <form class="rodape__email" action="#openmodal">
+            <input type="text" placeholder="Seu e-mail" required pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" title="teste@teste.com">
+            <button><a >Cadastrar</a></button>
+        </form>
+        <span>© 2022 OptimusTech. Todos os direitos reservados.</span>
+    </footer>
+</body>
+</html>

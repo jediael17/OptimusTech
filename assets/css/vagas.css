@@ -1,0 +1,141 @@
+.vagas{
+    width: 100%;
+    padding: 96px 112px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.vagas__div{
+    background-color: rgba(142, 36, 36, 0.05);
+    padding: 4px 12px;
+    border-radius: 1rem;
+    color: var(--vermelho-escuro);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.vagas h3{
+    color: var(--preto2);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+
+.vagas p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    align-self: stretch;
+    color: var(--cinza);
+    margin-bottom: 64px;
+}
+
+/* Descrição vagas */
+.vagas__descricao{
+    padding: 0 336px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vagas__descricao h4{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--preto2);
+    margin: 64px 0 8px 0;
+    width: 768px;
+}
+
+.vagas__descricao article{    
+    border: 1px solid var(--bordas-1px);
+    border-radius: 1rem;
+    margin: 24px 0 24px 0;
+    width: 768px;
+    display: flex;
+}
+
+.vagas__descricao article a{
+    text-decoration: none;
+    width: 100%;
+    padding: 24px 24px 28px;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.vagas__descricao article h5{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--preto2);
+}
+
+.vagas__descricao article p{
+    display: flex;
+    gap: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--cinza);
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1172px) {
+    .vagas{
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .vagas img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vagas__descricao{
+        padding: 28px 16px;
+    }
+    .vagas__descricao h4{
+        width: 100%;
+    }
+    .vagas__descricao article{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .vagas{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .vagas h3{
+        font-size: 34px;
+        text-align: center;
+    }
+    .vagas img{
+        width: 110%;
+    }
+    .vagas__descricao{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,33 @@
+:root{
+    --vermelho-escuro: #8E2424;
+    --cinza: #667085;
+    --branco: #FFF;
+    --preto1: #3A404E;
+    --preto2: #101828;
+    --bordas-1px: #EAECF0;
+    --footer: #F9FAFB;
+    --transparente: rgba(196, 25, 25, 0.03);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter' sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 28px 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1172px) {
+    .container{
+        padding: 28px 28px;
+    }
+}

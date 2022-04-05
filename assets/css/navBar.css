@@ -1,0 +1,231 @@
+.navBar{
+    width: 100%;
+    padding: 28px 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.navBar__logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-right: 119px;
+}
+
+.navBar__logo h1{
+    color: var(--preto1);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+}
+
+.navegacao__btn{
+    display: none;
+}
+
+.navegacao__icon{
+    display: none;
+}
+
+.navBar__lista{
+    list-style: none;
+    display: flex;
+    gap: 2rem;    
+    justify-content: flex-start;
+    margin-right: 398px;
+    box-sizing: border-box;
+}
+
+.navBar__lista li a{
+    font-style: normal;
+    color: var(--cinza);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navBar__login{
+    display: flex;
+    gap: 18px;
+}
+
+.navBar__login a{
+    padding: 10px 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
+    color: var(--cinza);
+    transition: 100ms;
+}
+
+.navBar__login a:active{
+    transition: 100ms;
+    transform: scale(1.1);
+}
+
+.navBar__login button{
+    padding: 10px 18px;
+    border: none;
+    background-color: var(--vermelho-escuro);
+    color: var(--branco);
+    border-radius: .5rem;
+    cursor: pointer;
+    width: 112px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    transition: 150ms;
+}
+
+.navBar__login button:active{
+    transition: 100ms;
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 1172px) {
+    .navBar{
+        display: grid;
+        grid-template-columns: 2fr 7fr 1fr;
+        padding: 28px 16px;
+        gap: 25px;
+    }
+    .navBar__logo{
+        margin: 0;
+    }
+    .navBar__lista{
+        margin: 0;
+    }
+    .navBar__login{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .navBar{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 0;
+        padding-top: 1rem;
+    }
+    .navegacao__hamburguer{
+        display: block;
+    }
+    .navegacao__btn:hover{
+        background-color: #f4f4f4;
+    }
+    
+    .navBar__lista{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        overflow: hidden;
+        background-color: var(--branco);
+        padding: 0;
+        margin: 0;
+    }
+    .navBar__lista li{
+        display: flex;
+        width: 100%;
+        
+    }
+    .navBar__lista li a{
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid var(--transparente);
+        text-align: center;
+    }
+    .navBar__login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        overflow: hidden;
+        background-color: var(--branco);
+        padding: 0;
+        margin: 0;
+    }
+    /*menu icon*/
+    .navegacao__icon{
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 18px 10px;
+        position: relative;
+        user-select: none;
+    }
+
+    .navegacao__barra{
+        background: #333;
+        display: block;
+        height: 3px;
+        position: relative;
+        transition: .2s ease-out;
+        width: 25px;
+    }
+
+    .navegacao__barra:before,
+    .navegacao__barra:after{
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .navegacao__barra:before{
+        top: 7px;
+    }
+
+    .navegacao__barra:after{
+        bottom: 7px;
+    }
+
+
+    .navegacao__btn{
+        display: none;
+    }
+    .navegacao__btn:checked ~ .navBar__login,
+    .navegacao__btn:checked ~ .navBar__lista{
+        max-height: 540px;
+    }
+
+    .navegacao__btn:checked ~ .navegacao__icon .navegacao__barra{
+        background: transparent;
+    }
+
+    .navegacao__btn:checked ~ .navegacao__icon .navegacao__barra:before{
+        transform: rotate(-45deg);
+    }
+
+    .navegacao__btn:checked ~ .navegacao__icon .navegacao__barra:after{
+        transform: rotate(45deg);
+    }
+
+    .navegacao__btn:checked ~ .navegacao__icon:not(.steps) .navegacao__barra:before,
+    .navegacao__btn:checked ~ .navegacao__icon:not(.steps) .navegacao__barra:after{
+        top: 0;
+    }
+}
